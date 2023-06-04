@@ -11,43 +11,43 @@
     <!-- body -->
     <div class="calculator">
             <!-- screen -->
-        <div class="screen">0</div>
+        <div class="screen"></div>
 
     <!-- div for buttons -->
         <div class="buttonContainer">
                 <!-- first row buttons -->
             <div class="row">
-                <button class="nums" onclick="">7</button>
-                <button class="nums" onclick="">8</button>
-                <button class="nums" onclick="">9</button>
-                <button class="nums operator" onclick="">/</button>
+                <button class="nums" onclick="uploadToScreen('7')">7</button>
+                <button class="nums" onclick="uploadToScreen('8')">8</button>
+                <button class="nums" onclick="uploadToScreen('9')">9</button>
+                <button class="nums operator" onclick="uploadToScreen('/')">/</button>
             </div>
             <!-- 2nd row buttons -->
             <div class="row">
-                <button class="nums" onclick="">4</button>
-                <button class="nums" onclick="">5</button>
-                <button class="nums" onclick="">6</button>
-                <button class="nums operator" onclick="">x</button>
+                <button class="nums" onclick="uploadToScreen('4')">4</button>
+                <button class="nums" onclick="uploadToScreen('5')">5</button>
+                <button class="nums" onclick="uploadToScreen('6')">6</button>
+                <button class="nums operator" onclick="uploadToScreen('X')">X</button>
             </div>
             <!-- 3rd row buttons -->
             <div class="row">
-                <button class="nums" onclick="">1</button>
-                <button class="nums" onclick="">2</button>
-                <button class="nums" onclick="">3</button>
-                <button class="nums operator">-</button>
+                <button class="nums" onclick="uploadToScreen('1')">1</button>
+                <button class="nums" onclick="uploadToScreen('2')">2</button>
+                <button class="nums" onclick="uploadToScreen('3')">3</button>
+                <button class="nums operator" onclick="uploadToScreen('-')">-</button>
             </div>
             <!-- 4th row buttons -->
             <div class="row">
-                <button class="nums" onclick="">0</button>
-                <button class="nums operator" onclick="">CLR</button>
-                <button class="nums operator" onclick="">+</button>
-                <button class="nums operator" onclick="">=</button>
+                <button class="nums" onclick="uploadToScreen('0')">0</button>
+                <button class="nums operator" onclick="clearScreen()">CLR</button>
+                <button class="nums operator" onclick="uploadToScreen('+')">+</button>
+                <button class="nums operator" onclick="splitInput()">=</button>
             </div>
         </div>
 
     </div>
 
 
-<script scr="app.js"></script>
+<script src="app.js" async defer></script>
 </body>
 </html>
