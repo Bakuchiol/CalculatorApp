@@ -44,6 +44,9 @@
                 <button class="nums operator" onclick="splitInput()">=</button>
             </div>
         </div>
+        <div class="newBox">
+            <p id="new" onclick="newCalc()">CLICK FOR NEW VERSION</p>
+        </div>
     </div>
 
     <!-- New Version -->
@@ -54,24 +57,24 @@
         <div class="btns">
             <button class="button" id="clear">C</button>
             <button class="button" id="delete">←</button>
-            <button class="button">/</button>
-            <button class="button">*</button>
+            <button class="button" id="divide">/</button>
+            <button class="button" id="multiply">*</button>
             <button class="button">7</button>
             <button class="button">8</button>
             <button class="button">9</button>
-            <button class="button">-</button>
+            <button class="button" id="minus">-</button>
             <button class="button">4</button>
             <button class="button">5</button>
             <button class="button">6</button>
-            <button class="button">+</button>
+            <button class="button" id="add">+</button>
             <button class="button">1</button>
             <button class="button">2</button>
             <button class="button">3</button>
             <button class="button" id="equal">=</button>
             <button class="button" id="zero">0</button>
             <button class="button">.</button>
-            <button class="old">OLD VER</button>
         </div>
+        <button id="old" onclick="old()">OLD VERSION</button>
     </div>
 
 

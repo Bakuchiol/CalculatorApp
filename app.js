@@ -50,7 +50,7 @@ const splitInput = () => {
 }
 
 /***************************************************************** NEW VERSION ***/
-// toggle to dark mode - new version
+// toggle - new version
 
 const newScreen = document.querySelector('.newScreen');
 const buttons = document.querySelectorAll('.button');
@@ -81,7 +81,6 @@ buttons.forEach(btn => {
             newScreen.textContent = eval(newScreen.textContent);
             return;
         }
-
         if(newScreen.textContent === "0"){
         newScreen.textContent = btnCast;
         } else {
@@ -89,3 +88,20 @@ buttons.forEach(btn => {
         }
     })
 });
+
+/******************************************************** toggle new/old */
+let newCalculator = document.querySelector('.newCalculator');
+let oldCalculator = document.querySelector('.calculator');
+let oldVer = document.getElementById('old');
+
+const old = () => {
+    oldCalculator.style.display = "block";
+    newCalculator.style.display = "none"
+    document.body.style.backgroundColor = "#a1bf8e"
+}
+
+const newCalc = () => {
+    oldCalculator.style.display = "none";
+    newCalculator.style.display = "block";
+    document.body.style.backgroundColor = "#cfdff0"
+}
