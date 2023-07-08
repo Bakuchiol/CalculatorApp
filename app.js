@@ -36,15 +36,40 @@ const splitInput = () => {
     } else if (nput.includes('-')){
         let solve = nput.split('-');
         console.log("input:", solve);
-        calculateTerms(solve[0]. solve[1], '-');
+        calculateTerms(solve[0], solve[1], '-');
     } else if (nput.includes('X')){
         let solve = nput.split('X');
         console.log("input:", solve);
-        calculateTerms(solve[0]. solve[1], 'X');
+        calculateTerms(solve[0], solve[1], 'X');
     } else if (nput.includes('/')){
         console.log("input:", solve);
-        calculateTerms(solve[0]. solve[1], '/');
+        calculateTerms(solve[0], solve[1], '/');
     } else {
-        alert('You need to add a  symbol in order to calculate');
+        alert('You need to add a symbol in order to calculate');
     }
 }
+
+/***************************************************************** NEW VERSION ***/
+// toggle to dark mode - new version
+
+const newScreen = document.querySelector('.newScreen');
+const buttons = document.querySelectorAll('.button');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        console.log("btn", btn);
+        const btnCast = btn.textContent;
+
+        // screen stays 0
+        if(btn.id === "clear"){
+            newScreen.textContent = "0";
+        }
+
+
+        if(newScreen.textContent === "0"){
+        newScreen.textContent += btnCast;
+        } else {
+            newScreen.textContent += btnCast
+        }
+    })
+});

@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     background: #a1bf8e;
@@ -37,7 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-button {
+.nums {
     height: 60px;
     width: 100px;
     margin-bottom: 10px;
@@ -45,8 +47,8 @@ button {
     font-size: 20px;
     font-weight: 700;
 }
-button:hover {
-    background: green;
+.nums:hover {
+    background: crimson;
 }
 .operator {
     background: orange;
@@ -54,8 +56,26 @@ button:hover {
     border: 2px solid rgb(144, 98, 11);
 }
 
-/* @media only screen and (max-width: 600px) {
-    body {
-        align-items: flex-start;
-    }
-} */
+/************************************************ NEW VERSION ****/
+
+.newCalculator {
+    border: solid #15173c;
+    width: 350px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 5px;
+    color: white;
+    background-color: #15173c;
+}
+.newScreen {
+    text-align: right;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.btns {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
