@@ -63,11 +63,17 @@ buttons.forEach(btn => {
         // screen stays 0
         if(btn.id === "clear"){
             newScreen.textContent = "0";
+            return;
         }
 
+        //delete
+        if(btn.id === "delete"){
+            newScreen.textContent = newScreen.textContent.slice(0, -1);
+            return;
+        }
 
         if(newScreen.textContent === "0"){
-        newScreen.textContent += btnCast;
+        newScreen.textContent = btnCast;
         } else {
             newScreen.textContent += btnCast
         }
