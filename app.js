@@ -68,7 +68,17 @@ buttons.forEach(btn => {
 
         //delete
         if(btn.id === "delete"){
+            if (newScreen.textContent.length === 1){
+                newScreen.textContent = "0"
+            } else {
             newScreen.textContent = newScreen.textContent.slice(0, -1);
+            }
+            return;
+        }
+
+        // equal
+        if (btn.id === "equal") {
+            newScreen.textContent = eval(newScreen.textContent);
             return;
         }
 
